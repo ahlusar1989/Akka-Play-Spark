@@ -27,7 +27,7 @@ Without the fork option, which is needed by Activator the application should sta
 
 ## The Classification Workflow
 
-The following diagram shows how the actor communication workflow for classification looks like:
+Actor communication workflow for classification is as follows:
 
 The __Application__ controller serves HTTP requests from the client/browser and obtains `ActorRefs` for `EventServer`, `StatisticsServer` and `Director`.
 
@@ -44,7 +44,7 @@ The __TrainingModelResponseHandler__ collects the models and vectorized Tweets m
 
 ## Model Training and Statistics
 
-The following diagram shows the actors involved in training the machine learning estimators and serving statistics about their predictive performance:
+Actors involved in training the machine learning estimators and serving statistics about their predictive performance are as follows:
 
 The __BatchTrainer__ receives a `Train` message as soon as a corpus (a collection of labeled Tweets) has been initialized. This corpus is initialized by the __CorpusInitializer__ and can either be created on-the-fly via Sparks `TwitterUtils.createStream` (with automatic labeling by using emoticons ":)" and ":(") or a static corpus provided by [Sentiment140](http://www.sentiment140.com/) which is read from a CSV file. Which one to choose can be configured via `ml.corpus.initialization.streamed` in `application.conf`. For batch training we use the high-level `org.apache.spark.ml` API. We use _Grid Search Cross Validation_ to get the best hyperparameters for our `LogisticRegression` model.
 
