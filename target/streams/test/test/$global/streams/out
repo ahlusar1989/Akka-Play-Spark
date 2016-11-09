@@ -1,0 +1,83 @@
+[0m[[0mdebug[0m] [0mForking tests - parallelism = false[0m
+[0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
+[0m[[0mdebug[0m] [0mRunner for org.scalatest.tools.Framework produced 6 initial tasks for 6 tests.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(actors.EventServerSpec, sbt.ForkMain$SubclassFingerscan@4b91c9c8, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mEventServerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mA event server[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle subscribe messages[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle unsubscribe messages[0m[0m
+[0m[[0minfo[0m] [0m[32m- should handle death of server[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(features.NormalizerSpec, sbt.ForkMain$SubclassFingerscan@7667a023, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mNormalizerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mNoiseNormalizer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should shorten duplicate chars[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace @username occurrences[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace urls[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace dash and lodash[0m[0m
+[0m[[0minfo[0m] [0m[32mSentimentNormalizer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace emojis[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace unicode[0m[0m
+[0m[[0minfo[0m] [0m[32mShortFormNormalizer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should replace short forms[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 7 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(features.TokenizerSpec, sbt.ForkMain$SubclassFingerscan@93a4309, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mTokenizerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mTokenizer.unigram[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create unigrams[0m[0m
+[0m[[0minfo[0m] [0m[32mTokenizer.bigram[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create bigrams for each sentence[0m[0m
+[0m[[0minfo[0m] [0m[32mTokenizer.trigram[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create trigrams for each sentence[0m[0m
+[0m[[0minfo[0m] [0m[32mTokenizer.ngram[0m[0m
+[0m[[0minfo[0m] [0m[32m- should create unigrams[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(features.StemmerSpec, sbt.ForkMain$SubclassFingerscan@3474a2, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mStemmerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mStemmer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should stem english words[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(features.TransformerSpec, sbt.ForkMain$SubclassFingerscan@6c7d4023, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mTransformerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mDefaultTransformer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should normalize, stem and tokenize a string[0m[0m
+[0m[[0minfo[0m] [0m[32mCustom transformers[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be composable[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(actors.ClassifierSpec, sbt.ForkMain$SubclassFingerscan@12fcf33c, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mClassifierSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mA classifier[0m[0m
+[0m[[0minfo[0m] [0m[31m- should return a list of classified tweets *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: block took 1.007 seconds, exceeding 1.000 seconds[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:165)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.within(TestKit.scala:301)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.within(TestKit.scala:718)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.within(TestKit.scala:310)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.within(TestKit.scala:718)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ClassifierSpec.scala:38)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ClassifierSpec.scala:26)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ClassifierSpec.scala:26)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a FetchResponseTimeout when timeout in twitter handler is exceeded[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a TrainingModelRetrievalTimeout when timeout in training model response handler is exceeded[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.[0m
+[0m[[0minfo[0m] [0mScalaTest[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 21 seconds, 362 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 20[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 19, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[31merror[0m] [0mFailed: Total 20, Failed 1, Errors 0, Passed 19[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	features.TokenizerSpec[0m
+[0m[[0mdebug[0m] [0m	actors.EventServerSpec[0m
+[0m[[0mdebug[0m] [0m	features.TransformerSpec[0m
+[0m[[0mdebug[0m] [0m	features.NormalizerSpec[0m
+[0m[[0mdebug[0m] [0m	features.StemmerSpec[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	actors.ClassifierSpec[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

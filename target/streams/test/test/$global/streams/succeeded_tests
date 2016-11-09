@@ -1,0 +1,7 @@
+#Successful Tests
+#Tue Nov 08 17:29:10 EST 2016
+features.TransformerSpec=1478644135278
+features.StemmerSpec=1478644135180
+features.TokenizerSpec=1478644135028
+actors.EventServerSpec=1478644134607
+features.NormalizerSpec=1478644134861

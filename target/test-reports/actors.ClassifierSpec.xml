@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="Sarans-MacBook-Pro.local" name="actors.ClassifierSpec" tests="3" errors="0" failures="1" time="6.15">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib"/><property name="java.vm.version" value="25.77-b03"/><property name="gopherProxySet" value="false"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/Users/saran/spark-mllib-scala-play"/><property name="java.runtime.version" value="1.8.0_77-b03"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed"/><property name="os.arch" value="x86_64"/><property name="java.io.tmpdir" value="/var/folders/5q/5ffj1k9n2zn7sv972_4vxpzc0000gn/T/"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Mac OS X"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/saran/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="10.10.5"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="user.home" value="/Users/saran"/><property name="user.timezone" value="America/New_York"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/Users/saran/.sbt/launchers/sbt-launch-57d0f04f4b48b11ef7e764f4cea58dee4e806ffd.jar"/><property name="user.name" value="saran"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/Users/saran/.sbt/launchers/sbt-launch-57d0f04f4b48b11ef7e764f4cea58dee4e806ffd.jar @load:file:/var/folders/5q/5ffj1k9n2zn7sv972_4vxpzc0000gn/T/sbtlaunch335845913698996926config"/><property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_77"/><property name="java.ext.dirs" value="/Users/saran/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/><property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="sun.cpu.endian" value="little"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="actors.ClassifierSpec" name="A classifier should return a list of classified tweets" time="1.056">
+                                                 <failure message="assertion failed: block took 1.007 seconds, exceeding 1.000 seconds" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: assertion failed: block took 1.007 seconds, exceeding 1.000 seconds
+	at scala.Predef$.assert(Predef.scala:165)
+	at akka.testkit.TestKitBase$class.within(TestKit.scala:301)
+	at akka.testkit.TestKit.within(TestKit.scala:718)
+	at akka.testkit.TestKitBase$class.within(TestKit.scala:310)
+	at akka.testkit.TestKit.within(TestKit.scala:718)
+	at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ClassifierSpec.scala:38)
+	at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ClassifierSpec.scala:26)
+	at actors.ClassifierSpec$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ClassifierSpec.scala:26)
+	at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+	at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$1.apply(WordSpecLike.scala:953)
+	at org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+	at actors.ClassifierSpec.withFixture(ClassifierSpec.scala:15)
+	at org.scalatest.WordSpecLike$class.invokeWithFixture$1(WordSpecLike.scala:950)
+	at org.scalatest.WordSpecLike$$anonfun$runTest$1.apply(WordSpecLike.scala:962)
+	at org.scalatest.WordSpecLike$$anonfun$runTest$1.apply(WordSpecLike.scala:962)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.WordSpecLike$class.runTest(WordSpecLike.scala:962)
+	at actors.ClassifierSpec.org$scalatest$BeforeAndAfterEach$$super$runTest(ClassifierSpec.scala:15)
+	at org.scalatest.BeforeAndAfterEach$class.runTest(BeforeAndAfterEach.scala:255)
+	at actors.ClassifierSpec.runTest(ClassifierSpec.scala:15)
+	at org.scalatest.WordSpecLike$$anonfun$runTests$1.apply(WordSpecLike.scala:1021)
+	at org.scalatest.WordSpecLike$$anonfun$runTests$1.apply(WordSpecLike.scala:1021)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:427)
+	at org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:483)
+	at org.scalatest.WordSpecLike$class.runTests(WordSpecLike.scala:1021)
+	at actors.ClassifierSpec.runTests(ClassifierSpec.scala:15)
+	at org.scalatest.Suite$class.run(Suite.scala:1424)
+	at actors.ClassifierSpec.org$scalatest$WordSpecLike$$super$run(ClassifierSpec.scala:15)
+	at org.scalatest.WordSpecLike$$anonfun$run$1.apply(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpecLike$$anonfun$run$1.apply(WordSpecLike.scala:1067)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:545)
+	at org.scalatest.WordSpecLike$class.run(WordSpecLike.scala:1067)
+	at actors.ClassifierSpec.run(ClassifierSpec.scala:15)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:466)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:677)
+	at sbt.ForkMain$Run$2.call(ForkMain.java:294)
+	at sbt.ForkMain$Run$2.call(ForkMain.java:284)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="actors.ClassifierSpec" name="A classifier should return a FetchResponseTimeout when timeout in twitter handler is exceeded" time="2.034">
+                                                 
+                                               </testcase><testcase classname="actors.ClassifierSpec" name="A classifier should return a TrainingModelRetrievalTimeout when timeout in training model response handler is exceeded" time="3.06">
+                                                 
+                                               </testcase>
+                     <system-out></system-out>
+                     <system-err></system-err>
+                   </testsuite>
