@@ -1,6 +1,6 @@
 # Apache Spark, MLlib, Scala, Akka and Play Framework
 
-Main focus of this template is the orchestration of these technologies by an example of using machine learning for classifying the sentiment of Twitter messages using MLlib. If you want to see this template in action please refer to http://sentiment.openforce.com (you will need a Twitter user to login).
+The main focus is the orchestration of these technologies by an example of using machine learning for classifying the sentiment of Twitter messages using MLlib. If you want to see this template in action please refer to http://sentiment.openforce.com (you will need a Twitter user to login).
 
 The fundamental idea of sentiment classification used in this template is based on [the paper by Alec Go et al.](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf ).
 
@@ -27,7 +27,7 @@ Without the fork option, which is needed by Activator the application should sta
 
 ## The Classification Workflow
 
-The following diagram shows how the actor communication workflow for classification looks like:
+The following outline demonstrates how the actor communication workflow for classification looks like:
 
 The __Application__ controller serves HTTP requests from the client/browser and obtains `ActorRefs` for `EventServer`, `StatisticsServer` and `Director`.
 
@@ -44,7 +44,7 @@ The __TrainingModelResponseHandler__ collects the models and vectorized Tweets m
 
 ## Model Training and Statistics
 
-The following diagram shows the actors involved in training the machine learning estimators and serving statistics about their predictive performance:
+The following outline demonstrates how the actors involved in training the machine learning estimators and serving statistics about their predictive performance:
 
 The __BatchTrainer__ receives a `Train` message as soon as a corpus (a collection of labeled Tweets) has been initialized. This corpus is initialized by the __CorpusInitializer__ and can either be created on-the-fly via Sparks `TwitterUtils.createStream` (with automatic labeling by using emoticons ":)" and ":(") or a static corpus provided by [Sentiment140](http://www.sentiment140.com/) which is read from a CSV file. Which one to choose can be configured via `ml.corpus.initialization.streamed` in `application.conf`. For batch training we use the high-level `org.apache.spark.ml` API. We use _Grid Search Cross Validation_ to get the best hyperparameters for our `LogisticRegression` model.
 
