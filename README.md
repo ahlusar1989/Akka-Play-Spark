@@ -1,6 +1,6 @@
 # Apache Spark, MLlib, Scala, Akka and Play Framework
 
-The main focus is the orchestration of these technologies by an example of using machine learning for classifying the sentiment of Twitter messages using MLlib. If you want to see this template in action please refer to http://sentiment.openforce.com (you will need a Twitter user to login).
+The main focus is the orchestration of these technologies by an example of using machine learning for classifying the sentiment of Twitter messages using MLlib. 
 
 The fundamental idea of sentiment classification used in this template is based on [the paper by Alec Go et al.](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf ).
 
